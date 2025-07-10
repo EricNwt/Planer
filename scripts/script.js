@@ -10,7 +10,7 @@ function login() {
       if (username === user && password === pass) {
         message.style.color = "green";
         message.textContent = "Login bem-sucedido!";
-        window.location.href = 'planilha.html';
+        window.location.href = '43726882022.html';
         // Aqui você pode redirecionar com window.location.href = 'pagina.html';
       } else {
         message.style.color = "red";
