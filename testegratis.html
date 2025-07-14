@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/stylep.css" type="text/css" rel="stylesheet">
+    <script src="scripts/scripteste.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Planner</title>
+</head>
+<body>
+<div class="container">
+  <h2>Controle Financeiro</h2><br>
+  <label>Digite sua Renda Mensal</label>
+  <input type="number" id="salario" placeholder="Ex: 2500"><br><hr>
+
+  <h3>Gastos com a Casa</h3>
+  <input type="number" id="internet" placeholder="Internet">
+  <input type="number" id="iptu" placeholder="IPTU">
+  <input type="number" id="luz" placeholder="Luz">
+  <input type="number" id="agua" placeholder="Água">
+  <input type="number" id="gas" placeholder="Gás">
+  <input type="number" id="servicomensal" placeholder="Serviços mensais - disponível na versão completa" disabled>
+  <input type="number" id="mercado" placeholder="Mercado"><br><hr>
+
+  <h3>Gastos com a Saúde</h3>
+  <h3>disponível na versão completa</h3>
+  <input type="number" id="veterinario" placeholder="Veterinário" disabled>
+  <input type="number" id="remedio" placeholder="Remédios" disabled>
+  <input type="number" id="medico" placeholder="Médico" disabled><br><hr>
+
+  <h3>Gastos com Transporte</h3>
+  <h3>disponível na versão completa</h3>
+  <input type="number" id="transportepublico" placeholder="Transporte público" disabled>
+  <input type="number" id="transporteparticular" placeholder="Transporte particular" disabled><br><hr>
+
+  <h3>Gastos com Automóvel</h3>
+  <h3>disponível na versão completa</h3>
+  <input type="number" id="combustivel" placeholder="Combustível" disabled>
+  <input type="number" id="ipva" placeholder="IPVA" disabled>
+  <input type="number" id="mecanico" placeholder="Manutenção / Mecânico" disabled>
+  <input type="number" id="multa" placeholder="Multas" disabled><br><hr>
+
+  <h3>Despesas Pessoais</h3>
+  <h3>disponível na versão completa</h3>
+  <input type="number" id="higiene" placeholder="Higiene" disabled>
+  <input type="number" id="cabeleireiro" placeholder="Cabeleireiro" disabled>
+  <input type="number" id="vestuario" placeholder="Vestuário" disabled>
+  <input type="number" id="academia" placeholder="Academia" disabled>
+  <input type="number" id="ajuda" placeholder="Ajuda financeira a outras pessoas" disabled><br><hr>
+
+  <h3>Lazer</h3>
+  <h3>disponível na versão completa</h3>
+  <input type="number" id="restaurante" placeholder="Restaurante" disabled>
+  <input type="number" id="deposito" placeholder="Bar" disabled>
+  <input type="number" id="presente" placeholder="Presentes" disabled>
+  <input type="number" id="passeio" placeholder="Passeios" disabled>
+  <input type="number" id="jogos" placeholder="Jogos" disabled>
+  <input type="number" id="passagem" placeholder="Passagens" disabled>
+  <input type="number" id="hotel" placeholder="Hotel" disabled><br><hr>
+
+  <h3>Gastos com Dependentes</h3>
+  <h3>disponível na versão completa</h3>
+  <input type="number" id="escola" placeholder="Educação (escola/faculdade)" disabled>
+  <input type="number" id="outros" placeholder="Outros não listados" disabled>
+
+  <button onclick="calcularGastos()">Calcular Resultado</button>
+
+  <div class="resultado" id="resultado"></div>
+</div>
+</body>
+</html>
