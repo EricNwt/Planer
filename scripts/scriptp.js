@@ -12,12 +12,12 @@ function calcularGastos() {
   const salario = parseValorBR(document.getElementById("salario").value);
 
   const categorias = {
-    "Casa": ["internet", "iptu", "luz", "agua", "gas", "servicomensal", "mercado"],
-    "Saúde": ["veterinario", "remedio", "medico"],
+    "Despesa Básica": ["internet", "iptu", "luz", "agua", "padaria", "gas", "servicomensal", "mercado"],
+    "Saúde": ["veterinario", "remedio", "consulta"],
     "Transporte": ["transportepublico", "transporteparticular"],
     "Automóvel": ["combustivel", "ipva", "mecanico", "multa"],
-    "Despesas Pessoais": ["higiene", "cabeleireiro", "vestuario", "academia", "ajuda"],
-    "Lazer": ["restaurante", "deposito", "presente", "passeio", "jogos", "passagem", "hotel"],
+    "Despesa Pessoal": ["compraon", "cabeleireiro", "vestuario", "academia", "ajuda"],
+    "Lazer": ["restaurante", "deposito", "presente", "passeio", "jogo", "passagem", "hotel"],
     "Dependentes/Outros": ["escola", "outros"]
   };
 
